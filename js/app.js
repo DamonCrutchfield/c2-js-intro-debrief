@@ -12,7 +12,7 @@ If the value of myNumber is any other number print the value of myNumber to the 
 
 */
 
-const myNumber;
+const myNumber = 3;
 
 typeof myNumber !== 'number' ? console.log('This is not a number'):
 myNumber % 3 === 0 && myNumber % 5 === 0 ? console.log('Genbuzz'):
@@ -34,28 +34,35 @@ Shoes- $50
 Jeans- $25
 Hat- $12
 Socks- $2
-If the variable input is not an item in the store, then print 'Invalid Item' to the console.
-Print a random integer (whole number) between 50 and 100 to the console
+
 
 Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 */
 
-const item;
+const item ;
 
 switch (item) {
     case 'Shoes':
-        console.log(`Shoes are $${Math.floor(Math.random()*101)}`);
+        console.log(`Shoes are $50`);
         break;
     case 'Jeans':
-        console.log(`Jeans are $${Math.floor(Math.random()*101)}`);
+        console.log(`Jeans are $25`);
         break;
     case 'Hat':
-        console.log(`Hat is $${Math.floor(Math.random()*101)}`);
+        console.log(`Hat is $12`);
         break;
-    case Socks:
-        console.log(`Socks are $${Math.floor(Math.random()*101)}`);
+    case 'Socks':
+        console.log(`Socks are $2`);
         break;
     default:
         console.log('Invalid Item');
 }
+
+/*
+
+Print a random integer (whole number) between 50 and 100 to the console
+
+ */
+
+console.log(Math.floor(Math.random() * 51) + 50);
