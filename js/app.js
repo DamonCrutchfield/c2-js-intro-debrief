@@ -46,12 +46,16 @@ const item;
 switch (item) {
     case 'Shoes':
         console.log(`Shoes are $${Math.floor(Math.random()*101)}`);
+        break;
     case 'Jeans':
         console.log(`Jeans are $${Math.floor(Math.random()*101)}`);
+        break;
     case 'Hat':
         console.log(`Hat is $${Math.floor(Math.random()*101)}`);
+        break;
     case Socks:
         console.log(`Socks are $${Math.floor(Math.random()*101)}`);
+        break;
     default:
         console.log('Invalid Item');
 }
